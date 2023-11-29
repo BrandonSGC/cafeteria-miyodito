@@ -1,4 +1,4 @@
-@use 'base/mixins' as m;
+@use '../base/mixins' as m;
 
 .barra {
     display: flex;
@@ -12,6 +12,8 @@
     .logo {
         width: 50%;
         margin: 0 auto;
+        border-radius: 1rem;
+        overflow: hidden;
 
         @include m.tablet { 
             width: 20rem;

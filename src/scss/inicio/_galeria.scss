@@ -1,4 +1,4 @@
-@use 'base/mixins' as m;
+@use '../base/mixins' as m;
 
 .galeria {
     @include m.grid(2, 2rem);

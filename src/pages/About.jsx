@@ -1,7 +1,11 @@
 import React from 'react'
+import { Header, Us } from '../components'
 
 export const About = () => {
   return (
-    <div>About</div>
+    <>
+      <Header page="nosotros" title="UNA NUEVA EXPERIENCIA CADA DÍA"/>
+      <Us/>
+    </>
   )
 }

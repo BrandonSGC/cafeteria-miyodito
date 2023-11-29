@@ -1,5 +1,6 @@
-@use 'base/variables' as v;
-@use 'base/mixins' as m;
+// Correcto: Utiliza @use para importar desde la carpeta base
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .header {
     padding: 5rem 0;
@@ -34,9 +35,7 @@
            }
        }
     }
-
 }
-
 
 // Header de cada página
 .header-inicio {

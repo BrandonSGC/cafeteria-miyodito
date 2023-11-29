@@ -7,13 +7,13 @@ export const Footer = () => {
         <div className="contenedor contenido-footer bg-white">
           <div className="footer-box ubicacion">
             <h3>Ubicación</h3>
-            <p>Nicolas Copérnico 5990</p>
-            <p>Guadalajara, Jalisco</p>
+            <p>San Josecito</p>
+            <p>Alajuelita, San José</p>
           </div>
           <div className="footer-box reservacion">
             <h3>Reservación</h3>
-            <p>Tel. 3850-9102</p>
-            <Link to="tel:+38509102">Llamar</Link>
+            <p>Tel. 7042-8451</p>
+            <Link to="tel:+50670428451">Llamar</Link>
           </div>
           <div className="footer-box horario">
             <h3>Horario</h3>
@@ -22,7 +22,7 @@ export const Footer = () => {
             <p>Domingo: Cerrado</p>
           </div>
         </div>
-        <p className="copyright">Todos los derechos reservados. La Cafetería</p>
+        <p className="copyright">Todos los derechos reservados. MiYodito</p>
       </footer>
     </>
   );

@@ -9,22 +9,13 @@ export const Us = () => {
         <div className="contenido-nosotros">
           <div class="imagen">
             <picture>
-              <source
-                srcset="build/img/nosotros_sidebar.avif"
-                type="image/avif"
-              />
-              <source
-                srcset="build/img/nosotros_sidebar.webp"
-                type="image/webp"
-              />
-              <source
-                srcset="build/img/nosotros_sidebar.jpg"
-                type="image/jpeg"
-              />
+              <source srcset="/img/nosotros_sidebar.avif" type="image/avif" />
+              <source srcset="/img/nosotros_sidebar.webp" type="image/webp" />
+              <source srcset="/img/nosotros_sidebar.jpg" type="image/jpeg" />
               <img
                 loading="lazy"
                 decoding="async"
-                src="build/img/nosotros_sidebar.jpg"
+                src="/img/nosotros_sidebar.jpg"
                 lazyalt="imagen"
                 width="500"
                 height="300"
@@ -34,19 +25,19 @@ export const Us = () => {
 
           <div class="texto">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-              ducimus, quos quo, laudantium temporibus ratione odit officia
-              labore incidunt vitae repellat beatae corrupti nam. Quis dolor
-              possimus illum unde! Excepturi?
+              Bienvenido a Miyodito, tu refugio acogedor para los amantes del
+              buen café y los momentos deliciosos. Sumérgete en un ambiente
+              donde la elegancia se combina con la calidez, creando el espacio
+              perfecto para disfrutar de momentos inolvidables.
             </p>
 
             <blockquote>Excelente Sabor!</blockquote>
 
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-              ducimus, quos quo, laudantium temporibus ratione odit officia
-              labore incidunt vitae repellat beatae corrupti nam. Quis dolor
-              possimus illum unde! Excepturi?
+              En Miyodito, cada taza es una obra maestra cuidadosamente
+              elaborada, donde el arte del café se fusiona con la pasión por la
+              calidad. Nuestros granos cuidadosamente seleccionados y tostados a
+              la perfección te ofrecen una experiencia única en cada sorbo.
             </p>
           </div>
         </div>
