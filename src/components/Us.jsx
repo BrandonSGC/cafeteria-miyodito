@@ -7,11 +7,11 @@ export const Us = () => {
         </h2>
 
         <div className="contenido-nosotros">
-          <div class="imagen">
+          <div className="imagen">
             <picture>
-              <source srcset="/img/nosotros_sidebar.avif" type="image/avif" />
-              <source srcset="/img/nosotros_sidebar.webp" type="image/webp" />
-              <source srcset="/img/nosotros_sidebar.jpg" type="image/jpeg" />
+              <source srcSet="/img/nosotros_sidebar.avif" type="image/avif" />
+              <source srcSet="/img/nosotros_sidebar.webp" type="image/webp" />
+              <source srcSet="/img/nosotros_sidebar.jpg" type="image/jpeg" />
               <img
                 loading="lazy"
                 decoding="async"
@@ -23,7 +23,7 @@ export const Us = () => {
             </picture>
           </div>
 
-          <div class="texto">
+          <div className="texto">
             <p>
               Bienvenido a Miyodito, tu refugio acogedor para los amantes del
               buen café y los momentos deliciosos. Sumérgete en un ambiente
