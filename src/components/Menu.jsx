@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import { GetMenu } from "../helpers";
+import { Spinner } from "./Spinner";
 
 export const Menu = () => {
   const [products, setProducts] = useState([]);
-  console.log(products);
-
-  const getCategories = () => {};
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const getMenu = async () => {
       const something = await GetMenu();
       setProducts(something);
+      setIsLoading(false);
     };
 
     getMenu();
@@ -27,7 +27,7 @@ export const Menu = () => {
           <section className="menu cafe">
             <h3>Bebidas</h3>
             <ul>
-              {/* Imprimr los de bebidas */}
+              {isLoading && <Spinner />}
               {products.map((product) => {
                 if (product.nombreCategoria === "Bebidas") {
                   return (
@@ -36,7 +36,7 @@ export const Menu = () => {
                         {product.nombreProducto}{" "}
                         <span>{product.descProducto}</span>{" "}
                       </p>
-                      <p className="precio">$25</p>
+                      <p className="precio">₡{product.precioProducto}</p>
                     </li>
                   );
                 }
@@ -46,9 +46,10 @@ export const Menu = () => {
 
           <section className="menu comida">
             <h3>Comidas</h3>
-            
+
             <ul>
-            {products.map((product) => {
+              {isLoading && <Spinner />}
+              {products.map((product) => {
                 if (product.nombreCategoria === "Comidas") {
                   return (
                     <li key={product.idProducto}>
@@ -56,7 +57,7 @@ export const Menu = () => {
                         {product.nombreProducto}{" "}
                         <span>{product.descProducto}</span>{" "}
                       </p>
-                      <p className="precio">$25</p>
+                      <p className="precio">₡{product.precioProducto}</p>
                     </li>
                   );
                 }

@@ -1,6 +1,6 @@
 export const GetMenu = async() => {
   try {
-    const url = `http://localhost:57640/Api/cafeteria/productos`;
+    const url = `https://tiusr29pl.cuc-carrera-ti.ac.cr/MiYoditoAPI2/Api/cafeteria/productos`;
     const response = await fetch(url);
     if (!response.ok) return [];
     return await response.json();
