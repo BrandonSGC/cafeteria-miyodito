@@ -1,6 +1,6 @@
 export const GetMenu = async() => {
   try {
-    const url = ``;
+    const url = `http://localhost:57640/Api/cafeteria/productos`;
     const response = await fetch(url);
     if (!response.ok) return [];
     return await response.json();

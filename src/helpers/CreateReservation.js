@@ -1,6 +1,6 @@
 export const CreateReservation = async(data) => {
   try {
-    const url = ``;
+    const url = `https://tiusr29pl.cuc-carrera-ti.ac.cr/MiYoditoAPI/Api/cafeteria/reservas`;
     const response = await fetch(url, {
       method: "POST",
       headers: {
